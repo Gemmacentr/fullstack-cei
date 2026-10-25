@@ -17,7 +17,7 @@ Agenda web con los eventos de Bologna semana a semana, creada a partir de la com
 ## PEC 1 – Investigación, diseño y arquitectura de datos
 
 - **Idea y referencias:** [docs/pec1-idea-referencias.pdf](docs/pec1-idea-referencias.pdf)
-- **Diseño en Google Stitch:** _(pendiente)_
+- **Diseño en Google Stitch:** [https://stitch.withgoogle.com/projects/13932656277757693528] (requiere iniciar sesión con una cuenta de Google)
 - **Base de datos:** [data/users.json](data/users.json) · [data/events.json](data/events.json) _(pendiente)_
 
 
