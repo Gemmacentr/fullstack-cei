@@ -1,0 +1,32 @@
+{
+  "entity": "User",
+  "collection": "users",
+  "description": "Usuarios con acceso al área privada. Solo hay dos roles: la administradora (da de alta las cuentas) y los organizadores (locales y colectivos con suscripción que publican eventos). El público no necesita cuenta.",
+  "fields": [
+    { "name": "_id", "type": "ObjectId", "required": true, "unique": true, "description": "Identificador generado automáticamente por MongoDB." },
+    { "name": "name", "type": "string", "required": true, "description": "Nombre del local u organizador (p. ej. \"Locomotiv Club\")." },
+    { "name": "email", "type": "string", "required": true, "unique": true, "description": "Email de acceso. Único en la colección." },
+    { "name": "password", "type": "string", "required": true, "description": "Contraseña guardada cifrada (hash con bcrypt), nunca en texto plano." },
+    { "name": "role", "type": "string", "required": true, "enum": ["admin", "organizer"], "default": "organizer", "description": "Rol del usuario: admin gestiona las cuentas, organizer gestiona sus propios eventos." },
+    { "name": "subscriptionActive", "type": "boolean", "required": true, "default": false, "description": "Indica si el organizador tiene la suscripción activa y puede publicar eventos." },
+    { "name": "avatar", "type": "string", "required": false, "description": "URL del logo o imagen del local." },
+    { "name": "instagram", "type": "string", "required": false, "description": "Usuario de Instagram del local (p. ej. \"@locomotivclub\")." },
+    { "name": "createdAt", "type": "date", "required": true, "description": "Fecha de creación de la cuenta (automática)." },
+    { "name": "updatedAt", "type": "date", "required": true, "description": "Fecha de la última modificación (automática)." }
+  ],
+  "relations": [
+    { "type": "one-to-many", "field": "_id", "target": "events.organizer", "description": "Un usuario organizador puede crear muchos eventos; cada evento pertenece a un único organizador." }
+  ],
+  "example": {
+    "_id": "6718a1f2c3d4e5f6a7b8c9d0",
+    "name": "Locomotiv Club",
+    "email": "eventi@locomotivclub.it",
+    "password": "$2b$10$K7Q2xY...hash",
+    "role": "organizer",
+    "subscriptionActive": true,
+    "avatar": "https://example.com/img/locomotiv-logo.png",
+    "instagram": "@locomotivclub",
+    "createdAt": "2026-09-15T10:00:00.000Z",
+    "updatedAt": "2026-10-20T18:30:00.000Z"
+  }
+}

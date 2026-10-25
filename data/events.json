@@ -1,0 +1,46 @@
+{
+  "entity": "Event",
+  "collection": "events",
+  "description": "Eventos de la agenda semanal de Bologna. Los crea, edita y elimina su organizador; el público solo los consulta.",
+  "fields": [
+    { "name": "_id", "type": "ObjectId", "required": true, "unique": true, "description": "Identificador generado automáticamente por MongoDB." },
+    { "name": "title", "type": "string", "required": true, "maxLength": 80, "description": "Título del evento." },
+    { "name": "description", "type": "string", "required": true, "maxLength": 600, "description": "Descripción del evento y del programa." },
+    { "name": "category", "type": "string", "required": true, "enum": ["concerti", "feste", "cinema", "mostre", "mercati", "altro"], "description": "Categoría del evento. Se usa en los filtros y en la pantalla Categorie." },
+    { "name": "startDate", "type": "date", "required": true, "description": "Fecha y hora de inicio." },
+    { "name": "endDate", "type": "date", "required": false, "description": "Fecha y hora de fin. Puede ser del día siguiente (eventos nocturnos)." },
+    { "name": "venue", "type": "string", "required": true, "description": "Nombre del local o espacio (p. ej. \"Locomotiv Club\")." },
+    { "name": "address", "type": "string", "required": true, "description": "Dirección completa." },
+    { "name": "neighborhood", "type": "string", "required": false, "description": "Barrio de Bologna (p. ej. \"Bolognina\"). Permite filtrar por zona." },
+    { "name": "price", "type": "number", "required": false, "min": 0, "default": 0, "description": "Precio de la entrada en euros. 0 si es gratuito." },
+    { "name": "isFree", "type": "boolean", "required": true, "default": false, "description": "Indica si la entrada es gratuita. Se usa para el filtro \"Gratis\"." },
+    { "name": "image", "type": "string", "required": false, "description": "URL del cartel o imagen principal del evento." },
+    { "name": "status", "type": "string", "required": true, "enum": ["draft", "published"], "default": "draft", "description": "Borrador (solo lo ve el organizador) o publicado (visible para el público)." },
+    { "name": "interestedCount", "type": "number", "required": false, "min": 0, "default": 0, "description": "Número de usuarios interesados que se muestra en las tarjetas." },
+    { "name": "organizer", "type": "ObjectId", "required": true, "ref": "users", "description": "Usuario organizador que ha creado el evento. Relación con la colección users." },
+    { "name": "createdAt", "type": "date", "required": true, "description": "Fecha de creación (automática)." },
+    { "name": "updatedAt", "type": "date", "required": true, "description": "Fecha de la última modificación (automática)." }
+  ],
+  "relations": [
+    { "type": "many-to-one", "field": "organizer", "target": "users._id", "description": "Cada evento pertenece a un único organizador; un organizador puede tener muchos eventos. Solo el organizador del evento puede editarlo o eliminarlo." }
+  ],
+  "example": {
+    "_id": "6718b3a4d5e6f7a8b9c0d1e2",
+    "title": "Parvenza Trash Night: Italo Disco & Tortellini",
+    "description": "Il rito propiziatorio bolognese dove la cassa dritta incontra il ripieno di maiale e parmigiano 30 mesi. Dalle 22:30 italo-disco e alle 03:00 tortellini caldi per tutti.",
+    "category": "feste",
+    "startDate": "2026-10-24T22:30:00.000Z",
+    "endDate": "2026-10-25T04:00:00.000Z",
+    "venue": "Locomotiv Club",
+    "address": "Via Sebastiano Serlio 25/2, Bologna",
+    "neighborhood": "Bolognina",
+    "price": 10,
+    "isFree": false,
+    "image": "https://example.com/img/trash-night.jpg",
+    "status": "published",
+    "interestedCount": 720,
+    "organizer": "6718a1f2c3d4e5f6a7b8c9d0",
+    "createdAt": "2026-10-10T12:00:00.000Z",
+    "updatedAt": "2026-10-20T18:30:00.000Z"
+  }
+}
