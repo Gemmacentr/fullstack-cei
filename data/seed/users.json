@@ -1,0 +1,70 @@
+[
+  {
+    "_id": {
+      "$oid": "6718a1f2c3d4e5f6a7b8c901"
+    },
+    "name": "Bologna Parvenza",
+    "email": "admin@bolognaparvenza.it",
+    "password": "$2b$10$D/jDh8c3wRjA1qafjAr19uflD8abR02cWOVaCxda272z420qnhqzy",
+    "role": "admin",
+    "subscriptionActive": true,
+    "instagram": "@bologna_parvenza",
+    "createdAt": {
+      "$date": "2026-09-01T10:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-01T10:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6718a1f2c3d4e5f6a7b8c902"
+    },
+    "name": "Locomotiv Club",
+    "email": "eventi@locomotivclub.it",
+    "password": "$2b$10$1/QOGFPCLwhcLM05ZgTFm.bsXBw7oPISSay4Vm9nPJAxTqDmbvlI6",
+    "role": "organizer",
+    "subscriptionActive": true,
+    "avatar": "https://example.com/img/locomotiv-logo.png",
+    "instagram": "@locomotivclub",
+    "createdAt": {
+      "$date": "2026-09-15T10:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-10-20T18:30:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6718a1f2c3d4e5f6a7b8c903"
+    },
+    "name": "Covo Club",
+    "email": "info@covoclub.it",
+    "password": "$2b$10$yD1xFV5qB2gXjDHUx/U.3u/30j7PndpUnyv1CUcCK3Iyedy16J2IC",
+    "role": "organizer",
+    "subscriptionActive": true,
+    "instagram": "@covoclub",
+    "createdAt": {
+      "$date": "2026-09-20T12:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-20T12:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6718a1f2c3d4e5f6a7b8c904"
+    },
+    "name": "Cinema Lumière",
+    "email": "programmazione@cinemalumiere.it",
+    "password": "$2b$10$KuKjr1..nZolxmR2SVccre1XNjuqMpWZn.fAAY7OmXQLXFhz4wK9C",
+    "role": "organizer",
+    "subscriptionActive": false,
+    "createdAt": {
+      "$date": "2026-10-01T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-10-25T09:00:00.000Z"
+    }
+  }
+]

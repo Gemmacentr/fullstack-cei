@@ -1,0 +1,370 @@
+[
+  {
+    "_id": {
+      "$oid": "6718b3a4d5e6f7a8b9c0d001"
+    },
+    "title": "Parvenza Trash Night: Italo Disco & Tortellini",
+    "description": "Il rito propiziatorio bolognese dove la cassa dritta incontra il ripieno di maiale e parmigiano 30 mesi. Dalle 22:30 italo-disco e alle 03:00 tortellini caldi per tutti.",
+    "category": "feste",
+    "startDate": {
+      "$date": "2026-10-24T20:30:00.000Z"
+    },
+    "endDate": {
+      "$date": "2026-10-25T03:00:00.000Z"
+    },
+    "venue": "Locomotiv Club",
+    "address": "Via Sebastiano Serlio 25/2, Bologna",
+    "neighborhood": "Bolognina",
+    "price": 10,
+    "isFree": false,
+    "image": "https://example.com/img/evento-01.jpg",
+    "status": "published",
+    "interestedCount": 720,
+    "organizer": {
+      "$oid": "6718a1f2c3d4e5f6a7b8c902"
+    },
+    "createdAt": {
+      "$date": "2026-10-10T12:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-10-20T18:30:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6718b3a4d5e6f7a8b9c0d002"
+    },
+    "title": "Bologna Indie Revolution: The New Sound of Emilia",
+    "description": "Tre band emergenti dalle cantine della Bolognina si alternano sul palco principale. Chitarre distorte e afterparty fino a tardi.",
+    "category": "concerti",
+    "startDate": {
+      "$date": "2026-11-07T20:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2026-11-08T00:30:00.000Z"
+    },
+    "venue": "Locomotiv Club",
+    "address": "Via Sebastiano Serlio 25/2, Bologna",
+    "neighborhood": "Bolognina",
+    "price": 12,
+    "isFree": false,
+    "image": "https://example.com/img/evento-02.jpg",
+    "status": "published",
+    "interestedCount": 450,
+    "organizer": {
+      "$oid": "6718a1f2c3d4e5f6a7b8c902"
+    },
+    "createdAt": {
+      "$date": "2026-10-10T12:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-10-20T18:30:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6718b3a4d5e6f7a8b9c0d003"
+    },
+    "title": "Stand-up Comedy sotto i Binari: Vol. 4",
+    "description": "Cinque comici locali senza peli sulla lingua. Monologhi caustici su fuorisede, affitti e canone.",
+    "category": "altro",
+    "startDate": {
+      "$date": "2026-11-18T19:45:00.000Z"
+    },
+    "endDate": {
+      "$date": "2026-11-18T22:30:00.000Z"
+    },
+    "venue": "Locomotiv Club",
+    "address": "Via Sebastiano Serlio 25/2, Bologna",
+    "neighborhood": "Bolognina",
+    "price": 0,
+    "isFree": true,
+    "image": "https://example.com/img/evento-03.jpg",
+    "status": "published",
+    "interestedCount": 250,
+    "organizer": {
+      "$oid": "6718a1f2c3d4e5f6a7b8c902"
+    },
+    "createdAt": {
+      "$date": "2026-10-10T12:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-10-20T18:30:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6718b3a4d5e6f7a8b9c0d004"
+    },
+    "title": "Festa di fine anno non autorizzata ma tollerata",
+    "description": "Line-up ancora da definire. Locandina in arrivo.",
+    "category": "feste",
+    "startDate": {
+      "$date": "2026-12-31T22:00:00.000Z"
+    },
+    "venue": "Locomotiv Club",
+    "address": "Via Sebastiano Serlio 25/2, Bologna",
+    "neighborhood": "Bolognina",
+    "isFree": false,
+    "image": "https://example.com/img/evento-04.jpg",
+    "status": "draft",
+    "interestedCount": 0,
+    "organizer": {
+      "$oid": "6718a1f2c3d4e5f6a7b8c902"
+    },
+    "createdAt": {
+      "$date": "2026-10-10T12:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-10-20T18:30:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6718b3a4d5e6f7a8b9c0d005"
+    },
+    "title": "Bologna Indie Club - Live ai Casermette",
+    "description": "Doppio live chitarre scordate e post-punk per nostalgici del 2012. Afterparty fino a mattina.",
+    "category": "concerti",
+    "startDate": {
+      "$date": "2026-10-24T19:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2026-10-24T23:30:00.000Z"
+    },
+    "venue": "Covo Club",
+    "address": "Viale Zagabria 1, Bologna",
+    "neighborhood": "San Donato",
+    "price": 12,
+    "isFree": false,
+    "image": "https://example.com/img/evento-05.jpg",
+    "status": "published",
+    "interestedCount": 380,
+    "organizer": {
+      "$oid": "6718a1f2c3d4e5f6a7b8c903"
+    },
+    "createdAt": {
+      "$date": "2026-10-10T12:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-10-20T18:30:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6718b3a4d5e6f7a8b9c0d006"
+    },
+    "title": "Sub-Portico Techno Session",
+    "description": "Cassa dritta, laser viola e fumo denso fino all'alba.",
+    "category": "feste",
+    "startDate": {
+      "$date": "2026-10-31T22:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2026-11-01T05:00:00.000Z"
+    },
+    "venue": "Covo Club",
+    "address": "Viale Zagabria 1, Bologna",
+    "neighborhood": "San Donato",
+    "price": 15,
+    "isFree": false,
+    "image": "https://example.com/img/evento-06.jpg",
+    "status": "published",
+    "interestedCount": 610,
+    "organizer": {
+      "$oid": "6718a1f2c3d4e5f6a7b8c903"
+    },
+    "createdAt": {
+      "$date": "2026-10-10T12:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-10-20T18:30:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6718b3a4d5e6f7a8b9c0d007"
+    },
+    "title": "Open Mic & Stand Up dei Fuorisede",
+    "description": "Microfono aperto per poeti, comici e cantautori in erba. Offerta libera.",
+    "category": "altro",
+    "startDate": {
+      "$date": "2026-11-05T19:30:00.000Z"
+    },
+    "endDate": {
+      "$date": "2026-11-05T23:00:00.000Z"
+    },
+    "venue": "Covo Club",
+    "address": "Viale Zagabria 1, Bologna",
+    "neighborhood": "San Donato",
+    "price": 0,
+    "isFree": true,
+    "image": "https://example.com/img/evento-07.jpg",
+    "status": "published",
+    "interestedCount": 140,
+    "organizer": {
+      "$oid": "6718a1f2c3d4e5f6a7b8c903"
+    },
+    "createdAt": {
+      "$date": "2026-10-10T12:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-10-20T18:30:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6718b3a4d5e6f7a8b9c0d008"
+    },
+    "title": "Karaoke Post-Esame al Pratello",
+    "description": "Hai passato l'esame con 18 o sei stato rimandato a gennaio? Microfono aperto, birrette e stonature garantite.",
+    "category": "feste",
+    "startDate": {
+      "$date": "2026-10-24T20:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2026-10-25T00:00:00.000Z"
+    },
+    "venue": "Bar Senza Nome",
+    "address": "Via del Pratello 12, Bologna",
+    "neighborhood": "Pratello",
+    "price": 0,
+    "isFree": true,
+    "image": "https://example.com/img/evento-08.jpg",
+    "status": "published",
+    "interestedCount": 310,
+    "organizer": {
+      "$oid": "6718a1f2c3d4e5f6a7b8c903"
+    },
+    "createdAt": {
+      "$date": "2026-10-10T12:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-10-20T18:30:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6718b3a4d5e6f7a8b9c0d009"
+    },
+    "title": "Midnight Cult: Maratona Horror Bolognese",
+    "description": "Tre cult movies restaurati in 35mm proiettati a notte fonda tra pop-corn e sonnolenza.",
+    "category": "cinema",
+    "startDate": {
+      "$date": "2026-10-24T21:45:00.000Z"
+    },
+    "endDate": {
+      "$date": "2026-10-25T03:30:00.000Z"
+    },
+    "venue": "Cinema Lumière",
+    "address": "Piazzetta Pier Paolo Pasolini 3/b, Bologna",
+    "neighborhood": "Manifattura delle Arti",
+    "price": 5,
+    "isFree": false,
+    "image": "https://example.com/img/evento-09.jpg",
+    "status": "published",
+    "interestedCount": 205,
+    "organizer": {
+      "$oid": "6718a1f2c3d4e5f6a7b8c904"
+    },
+    "createdAt": {
+      "$date": "2026-10-10T12:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-10-20T18:30:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6718b3a4d5e6f7a8b9c0d010"
+    },
+    "title": "Rassegna Cinema all'aperto sotto i portici",
+    "description": "Proiezione gratuita di classici del cinema italiano. Portare il cuscino.",
+    "category": "cinema",
+    "startDate": {
+      "$date": "2026-11-12T19:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2026-11-12T21:30:00.000Z"
+    },
+    "venue": "Cinema Lumière",
+    "address": "Piazzetta Pier Paolo Pasolini 3/b, Bologna",
+    "neighborhood": "Manifattura delle Arti",
+    "price": 0,
+    "isFree": true,
+    "image": "https://example.com/img/evento-10.jpg",
+    "status": "published",
+    "interestedCount": 160,
+    "organizer": {
+      "$oid": "6718a1f2c3d4e5f6a7b8c904"
+    },
+    "createdAt": {
+      "$date": "2026-10-10T12:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-10-20T18:30:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6718b3a4d5e6f7a8b9c0d011"
+    },
+    "title": "Poster Art & Meme: 10 anni sotto i portici",
+    "description": "Mostra di serigrafie punk e meme art della scena bolognese. Vernissage con vino.",
+    "category": "mostre",
+    "startDate": {
+      "$date": "2026-10-22T16:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2026-11-15T19:00:00.000Z"
+    },
+    "venue": "Spazio DAS",
+    "address": "Via del Porto 11/2, Bologna",
+    "neighborhood": "San Zeno",
+    "price": 0,
+    "isFree": true,
+    "image": "https://example.com/img/evento-11.jpg",
+    "status": "published",
+    "interestedCount": 290,
+    "organizer": {
+      "$oid": "6718a1f2c3d4e5f6a7b8c901"
+    },
+    "createdAt": {
+      "$date": "2026-10-10T12:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-10-20T18:30:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6718b3a4d5e6f7a8b9c0d012"
+    },
+    "title": "Mercatino Vintage & Vinili in Montagnola",
+    "description": "Scatole di vinili punk, giacche a vento vintage anni '90 e fanzine autoprodotte.",
+    "category": "mercati",
+    "startDate": {
+      "$date": "2026-10-25T08:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2026-10-25T17:00:00.000Z"
+    },
+    "venue": "Parco della Montagnola",
+    "address": "Via Irnerio 2/3, Bologna",
+    "neighborhood": "Centro",
+    "price": 0,
+    "isFree": true,
+    "image": "https://example.com/img/evento-12.jpg",
+    "status": "published",
+    "interestedCount": 420,
+    "organizer": {
+      "$oid": "6718a1f2c3d4e5f6a7b8c901"
+    },
+    "createdAt": {
+      "$date": "2026-10-10T12:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-10-20T18:30:00.000Z"
+    }
+  }
+]
