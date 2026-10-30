@@ -12,14 +12,15 @@ Agenda web con los eventos de Bologna semana a semana, creada a partir de la com
 | --- | --- |
 | `docs/` | Documentación: idea del proyecto y análisis de referencias |
 | `design/` | Diseño de la interfaz (Google Stitch) |
-| `data/` | Propuesta de base de datos en JSON |
+| `data/schema/` | Modelo de datos (PEC 1): campos, tipos, obligatorios y relaciones |
+| `data/seed/` | Datos de prueba cargados en MongoDB Atlas (PEC 2) |
 
 ## PEC 1 – Investigación, diseño y arquitectura de datos
 
 - **Idea y referencias:** [docs/pec1-idea-referencias.pdf](docs/pec1-idea-referencias.pdf)
 - **Diseño en Google Stitch:** [ver proyecto en Stitch](https://stitch.withgoogle.com/projects/13932656277757693528) (requiere iniciar sesión con una cuenta de Google)
 - **Código exportado de Stitch:** [design/DESKTOP](design/DESKTOP) · [design/MOBILE](design/MOBILE) (HTML y captura de cada pantalla)
-- **Base de datos:** [data/users.json](data/users.json) · [data/events.json](data/events.json). Propuesta generada con ayuda de IA (Claude) y revisada manualmente.
+- **Base de datos:** [data/schema/users.json](data/schema/users.json) · [data/schema/events.json](data/schema/events.json). Propuesta generada con ayuda de IA (Claude) y revisada manualmente.
 
 ### Capturas
 
@@ -49,3 +50,29 @@ Agenda web con los eventos de Bologna semana a semana, creada a partir de la com
 Todas las pantallas comparten el mismo header (logo, menú "Eventi" / "Categorie", selector de idioma IT · ES · EN y botón "Accedi") y el mismo footer. Las pantallas del organizador sustituyen "Accedi" por el nombre del local y "Logout".
 
 **Versión móvil:** las pantallas principales tienen también una versión móvil (390 px) con menú hamburguesa, tarjetas en una sola columna y formularios a una columna. Es una propuesta inicial del diseño responsive, que se desarrollará en la PEC 4.
+
+## PEC 2 – Base de datos en MongoDB Atlas
+
+Base de datos desplegada en **MongoDB Atlas** (clúster gratuito M0, `Cluster0`) con la base de datos `bologna_parvenza` y dos colecciones:
+
+| Colección | Documentos | Contenido |
+| --- | --- | --- |
+| `users` | 4 | Una administradora y tres organizadores (uno con la suscripción caducada). Contraseñas guardadas cifradas con bcrypt. |
+| `events` | 12 | Eventos de las seis categorías, gratuitos y de pago, publicados y un borrador. |
+
+- **Datos de prueba:** [data/seed/users.json](data/seed/users.json) · [data/seed/events.json](data/seed/events.json) (formato MongoDB Extended JSON: `$oid` y `$date`, para que Atlas guarde los `_id` como ObjectId y las fechas como Date).
+- **Modelo de datos:** [data/schema/](data/schema/) (campos, tipos, obligatorios / opcionales y relaciones).
+- **Relación:** cada evento guarda en `organizer` el `_id` del usuario que lo ha creado (referencia `events.organizer` → `users._id`, uno a muchos).
+- **Cadena de conexión** (sin contraseña real):
+
+```
+mongodb+srv://gemmacentrone2_db_user:<db_password>@cluster0.XXXXX.mongodb.net/bologna_parvenza
+```
+
+La contraseña real no se publica: en la PEC 3 irá en un archivo `.env` excluido de GitHub.
+
+### Capturas de Atlas
+
+| Colección `events` | Colección `users` |
+| --- | --- |
+| ![events](docs/pec2/atlas-events.png) | ![users](docs/pec2/atlas-users.png) |
