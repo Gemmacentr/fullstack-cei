@@ -66,7 +66,7 @@ Base de datos desplegada en **MongoDB Atlas** (clúster gratuito M0, `Cluster0`)
 - **Cadena de conexión** (sin contraseña real):
 
 ```
-mongodb+srv://gemmacentrone2_db_user:<db_password>@cluster0.XXXXX.mongodb.net/bologna_parvenza
+mongodb+srv://gemmacentrone2_db_user:<db_password>@cluster0.kt76qwf.mongodb.net/bologna_parvenza
 ```
 
 La contraseña real no se publica: en la PEC 3 irá en un archivo `.env` excluido de GitHub.
